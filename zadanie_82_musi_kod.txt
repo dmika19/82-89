@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+<h1><div style="color:red">Musiałowska</div></h1>
+<h3><div style="color:green">dzis = new Date()--> daje możliwość dostępu do dat i manipulowania datami oraz czasem<br>
+dzis = dzis.getHours()--> zwraca aktualną godzinę (z przedziału 0 - 23)<br>
+dzis = dzis.getMinutes()--> zwraca minuty (z przedziału 0 - 59)<br>
+dzis = dzis.getMonth()+1--> zwraca aktualny miesiąc (0 - styczeń, 1 - luty itd.)<br>
+dzis = dzis.getDate()--> dzień miesiąca (wartość z przedziału 1 - 31)<br>
+dzis = dzis.getFullYear()--> pełna liczba reprezentująca rok</div></h3>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,";",dzis.getDate(),";",dzis.getFullYear());
+</script>
+</body>
+</html>

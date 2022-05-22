@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Zadanie 84</title>
+<script language="JavaScript">
+function musialowska_start() {
+start_mus = new Date();
+poczatek_mus=start_mus.getTime()
+}
+function musialowska_stop() {
+stop_mus = new Date();
+koniec_mus=stop_mus.getTime()
+roznica_mus=koniec_mus-poczatek_mus;
+pokaz1.innerHTML=roznica_mus/1000+" s";
+}
+</script>
+</head>
+<body>
+<script language="JavaScript">
+dzis_mus = new Date();
+document.write("<br>Aktualny czas : ",dzis_mus.getHours(),":",dzis_mus.getMinutes());
+</script>
+<form>
+<input type="button" name="Button1" value="START stoper" onclick="musialowska_start()">
+<input type="button" name="Button2" value="STOP stoper" onclick="musialowska_stop()">
+</form>
+<table border="6">
+<tr id="pokaz1"></tr>
+</table>
+</body>
+</html>

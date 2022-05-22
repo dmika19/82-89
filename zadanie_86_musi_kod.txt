@@ -1,0 +1,30 @@
+<html>
+<head>
+<script language="JavaScript">
+function Przycisk1_musialowska(){
+pokaz1.innerHTML="Ostatnio zmodyfikowany: "+document.lastModified;
+}
+function Przycisk2_musialowska(){
+dzis= new Date()
+pokaz2.innerHTML="<br>Aktualna data : "+(dzis.getMonth()+1)+"."+dzis.getDate()+"."+dzis.getFullYear();
+}
+function Przycisk3_musialowska()
+{
+dzis = new Date()
+pokaz3.innerHTML="<br>Aktualny czas: "+dzis.getHours()+":"+dzis.getMinutes();
+}
+</script>
+</head>
+<body>
+<form>
+<a onclick="Przycisk1_musialowska(' ')"><img src="p11.jpg" alt="Przycisk1()" border="0" onmouseover="this.src = 'p1.jpg'"></a><br>
+<a onclick="Przycisk2_musialowska(' ')"><img src="p22.jpg" alt="Przycisk2()" border="0" onmouseover="this.src = 'p2.jpg'"></a><br>
+<a onclick="Przycisk3_musialowska(' ')"><img src="p33.jpg" alt="Przycisk3()" border="0" onmouseover="this.src = 'p3.jpg'"></a><br>
+</form>
+<table>
+<tr id="pokaz1"></tr><br>
+<tr id="pokaz2"></tr><br>
+<tr id="pokaz3"></tr><br>
+</table>
+</body>
+</html>
