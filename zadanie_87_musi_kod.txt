@@ -16,7 +16,15 @@ alert("Podaj ciąg znaków!")
 }
 else
 {
+if (form.txt1.value == "" || form.txt1.value.length<4)
+{
+alert("Nazwisko jest za krótkie!");
+}
+else
+{
 alert("Cześć "+form.txt1.value+" ! Informacja poprawna!");
+}
+
 }
 }
 function test2(form)
